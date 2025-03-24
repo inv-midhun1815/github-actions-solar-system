@@ -20,7 +20,7 @@ jobs:
           with:
             node-version: 20
 
-        - name: Cache NPM dependencies
+        - name: Cache npm dependencies
           uses: actions/cache@v4
           with: 
             path: ~/.npm
@@ -37,3 +37,4 @@ jobs:
           with:
             name: Mocha-Test-Result
             path: test-results.xml
+            
